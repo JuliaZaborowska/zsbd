@@ -1,0 +1,35 @@
+Constrainty do zrobienia:
+
+1. Post:
+
+	1.1 Treść postu(posta?) nie może być pusta
+	1.2 Data utworzenia postu nie może być mniejsza niż data urodzenia usera
+	
+2. Grupa-Post
+	
+	2.1 Post nie może być przypisany do grupy, jeżeli autor postu nie jest w tej grupie.
+	
+3. Grupa
+
+	3.1 Nazwa grupy nie może być pusta
+
+4. Komentarz
+
+	4.1 Data utworzenia komentarza nie może być mniejsza niż data utworzenia postu.
+	
+5. Użytkownik
+
+	5.1 Login jest unikalny
+	5.2 Telefon jest unikalny jeśli istnieje
+
+6. Grupa-Członek_Grupy
+
+	6.1 Para id_grupy - id_członka grupy jest unikalna.
+	
+7. Znajomi
+
+	7.1 Użytkownik nie może być swoim własnym znajomym.
+	
+8. Wiadomosc
+
+	8.1 Użytkownik nie może wysyłać wiadomości do siebie (id nadawcy != id odbiorcy)
